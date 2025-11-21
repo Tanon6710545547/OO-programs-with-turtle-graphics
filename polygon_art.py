@@ -28,7 +28,6 @@ class PolygonDrawer:
         turtle.penup()
 
     def draw_style(self, style):
-        """ทำงานเหมือนลูป style 1–9 ของเดิมเป๊ะ"""
         for _ in range(20):
             num_sides = random.randint(3, 5) if style in ['4', '8', '9'] else (
                 3 if style in ['1', '5'] else (4 if style in ['2', '6'] else 5)
